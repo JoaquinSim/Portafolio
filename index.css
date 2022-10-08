@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: #3e2723;
+  background-color:#5C6BC0 ;
 }
 .cv {
   background-color: black;
@@ -30,10 +30,11 @@ body {
 .header {
   background-color: black;
   height: 100vh;
-  width: 150px;
+  width: 200px;
   flex-direction: column;
   display: none;
   transition: .3s;
+  position: absolute;
 }
 .header__menu {
   height: 30px;
@@ -42,6 +43,7 @@ body {
   left: 10px;
   transition: .4s;
   cursor: pointer;
+  z-index: 1;
 }
 .header__menu img {
   height: 100%;
@@ -50,4 +52,43 @@ body {
 }
 #menu2{
     display: none;
+}
+.slide{
+  width: 350px;
+  position: absolute;
+  height: 40px;
+  right:5px;
+  top:5px;
+  background-color:rgba(0, 0, 0, 0.122);
+}
+.slide__contenido{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+.slide__contenido li{
+  height: 90%;
+  width:95px;
+}
+.slide__contenido li:hover{
+  background-color:rgba(0, 0, 0, .8);
+}
+.slide-lista{
+  text-decoration: none;
+  color: rgb(154, 154, 154);
+}
+.slide-lista:hover{
+  color: white;
+}
+.main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__saludo{
+  text-align: center;
+  border-bottom: 2px solid black;
 }
